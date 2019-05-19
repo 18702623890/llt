@@ -1,0 +1,40 @@
+jdbc:java database connectivity(java数据库连接技术)，不用让java application直接去连接数据库（繁琐），使用jdbc对接不同的数据库驱动，屏蔽数据库差异性，数据库厂商统一实现了java.sql.Driver接口
+提供了一些访问数据库的类库(核心类):
+java.sql.Connection:连接数据库
+java.sql.Statement：执行sql,不是用，缺点：导致SQL注入
+java.sql.PrepareStatment:Statement子类，执行sql,预编译，防止SQL注入，性能高
+java.sql.ResultSet：结果集
+java.sql.CallableStatement:执行存储过程或函数
+java.sql.DriverManager:数据库驱动管理类
+
+odbc-->
+特点：
+依赖于win操作系统，不能在其他操作系统使用
+通过jdbc api先对接odbc api，才能访问数据库，虽然可以不用管连接数据库类型，但是中间层次多影响性能
+
+--sql注入举例
+--name="' or 1=1 --";
+--pwd="sa";
+select id, name, pwd from loginuser u where u.name='' or 1=1 --' and u.pwd='sa';
+
+
+https://www.baidu.com:80/projectName
+mysql:
+jdbc:mysql://192.168.10.170:3306/myschool
+协议：子协议：//主机名：端口号/数据库名
+
+oracle:
+jdbc:oracle:thin:@192.168.10.170:1521:hzit
+协议：子协议：@主机名：端口号:数据库实例名(sid)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Java连接数据库步骤：
+1.加载驱动	Class.forName("oracle.jdbc.driver.OracleDriver");
+2.获得连接对象 Connection conn=DriverManager.getConnection(driver_url, loginName, logingPwd);
+3.编写sql
+4.设置参数，使用prepareStatement.setXxxx(paramIndex,value);
+5.执行sql 
+查询：prepareStatement.executeQuery();
+增删改：prepareStatement.executeUpdate();
+6.关闭资源:按照先开的后关的原则
+

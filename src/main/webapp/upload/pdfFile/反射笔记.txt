@@ -1,0 +1,48 @@
+反射
+概念：java称为动态语言的关键就是Reflection(反射),反射机制是：允许程序在执行期间借助Reflection API取得任何类的内部信息（构造方法，成员变量，成员方法，注解，类里面的其他方法......），并能够直接操作任意对象的内部属性和方法。
+
+主要功能：
+在运行时构建任意一个类的对象
+在运行时构建任意一个类的所有的成员变量和方法
+在运行时构建任意一个类的方法或构造方法
+生成动态代理
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Class类:用来描述类的类
+Field类：用来描述类中属性的类
+Method类：用来描述类中方法的类
+Constructor类：用来描述类中构造器的类
+
+创建Class对象有3种方式(推荐使用第一种)：
+	a.Class.forName("类的全路径");//全路径是包名+类名，例如：week4.ref.Dog
+	b.	先创建对象,在通过对象的getClass()得到Class的对象
+		Dog dog = new Dog();
+		Class cla0 =dog.getClass();
+	c.Class cla1 = Dog.class.getClass();
+~~~~~~~~~~Field~~~~~~~~~~~~~~~~~`	
+得带Field类的对象的方式:
+公共属性：Field field = cla.getField(属性名);
+所有声明的属性（包含私有的）：Field field2 = cla.getDeclaredField(属性名);
+包含所有属性的数组：Field[] fields = cla.getDeclaredFields();
+
+备注：如果调用私有属性，必须开启权限:field2.setAccessible(true);
+~~~~~~~~~~Method~~~~~~~~~~~~~~~~~`	
+公共方法：Method method = cla.getMethod(方法名);
+所有声明的方法（包含私有的）：Method method2 = cla.getDeclaredMethod(方法名);
+包含所有方法的数组：Method[] methods = cla.getDeclaredMethods();
+
+method.invoke(执行对象,参数列表):在运行中动态调用执行某个类中的方法
+备注：如果调用私有方法，必须开启权限:method2.setAccessible(true);
+~~~~~~~~~~Constructor~~~~~~~~~~~~~~~~~`
+
+
+
+
+
+
+
+
+
+
+
+
+

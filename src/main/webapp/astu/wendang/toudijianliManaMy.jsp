@@ -30,10 +30,18 @@ String path = request.getContextPath();
 				<tr bgcolor="#E7E7E7">
 					<td height="14" colspan="2" background="<%=path %>/img/tbg.gif">&nbsp;投递简历记录&nbsp;</td>
 				</tr>
+<<<<<<< HEAD
 				<tr align="center" bgcolor="#FAFAF1" height="22">
 					<td width="50%">投递简历时间</td>
 					<td width="50%">简历附件</td>
 		        </tr>	
+=======
+				<tr>
+				<s:fieldError="' align="center" bgcolor="#FAFAF1" height="22">
+					<td width="50%">投递简历时间</td>
+					<td width="50%">简历附件</td>
+		        </tr>
+>>>>>>> 第一次更新
 				<s:iterator value="#request.toudijianliList" id="toudijianli">
 				<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='red';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22">
 					<td bgcolor="#FFFFFF" align="center">

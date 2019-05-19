@@ -8,4 +8,12 @@ create  table users(
       email varchar(100),
       birthday DATE ,
       address varchar (100)
+<<<<<<< HEAD
+=======
+);
+create table json_task(
+   id int  primary key auto_increment,
+   checksum varchar(100),
+   status int
+>>>>>>> 第一次更新
 );

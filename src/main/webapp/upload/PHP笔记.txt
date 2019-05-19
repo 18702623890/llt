@@ -1,0 +1,28 @@
+  1.gettype(传入一个变量) 能够获得变量的类型
+
+  2.var_dump(传入一个变量) 输出变类型和值
+
+  3.settype(变量，类型) 直接改变量本身
+   
+  4.phpinfo包含了当前状态的大量信息，包含了 PHP 编译选项、启用的扩展、PHP 版本、服务器信息和环境变量（如果编译为一个模块的话）、PHP环境变量、操作系统版本信息、path 变量、配置选项的本地值和主值、HTTP 头和PHP授权信息(License)：
+
+  5.换行 echo "<br/>";echo '<pre>';
+ 
+  6.两个等号不判断类型，所以执行的是真区间。===三个等号才是全等，可以判断类型。
+
+  7.instanceof	判断某个对象是否来自某个类，如果是的返回true，如果不是返回false
+
+  8.日期类型 date("4")，赋值;
+
+  9.$dida = rand(0,23);
+rand(3,30)rand函数表示从3到30随机生成一个整数。
+ 
+  10。copy(string $source,string $dest);拷贝一个文件；int array_unshift ( array &$array , mixed $value1 [, mixed $... ] )  操作一个数组，向数组中之前插入其他类型的参数；bool array_walk ( array &$array , callable $callback [, mixed $userdata = NULL ] ) 传入一个回调函数，将数组的原来的组操作，并且发生变化;
+   
+   11.使用unset删除变量的方式来删除数组里面的值。删除了中间的值，并不会让后面的下标向前自动移动。而是原来的值为多少就为多少。
+ 
+   12.foreach( 要循环的数组变量 as [键变量 =>] 值变量){
+//循环的结构体
+}遍历关联数组。foreach($data  as $key => $value)
+  
+   13.索引数组的一一对应原则。list第一个变量对应的是下标为0的数组元素，下标为1的对应的是list里面的第二个数组元素。list数组是一一对应的原则。

@@ -77,6 +77,10 @@
             <td> <input type="button" id="getCode" value="获取验证码" onclick="sendCode(this)"></td>
         </tr>
         <tr>
+<<<<<<< HEAD
+=======
+        <input type="hidden" name="jfinal_token" value="${jfinal_token}">
+>>>>>>> 第一次更新
         <tr>
             <td colspan="2" align="center"><input type="submit" value="提交"></td>
         </tr>

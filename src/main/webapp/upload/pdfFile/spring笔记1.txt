@@ -1,0 +1,76 @@
+spring七个模块：aop,dao,orm,context,web,mvc,core
+
+Ioc：控制反转，将对象的控制权由代码本身(需要对象就new一个对象)转移到外部容器(一切由spring来实例化对象),
+目的：解耦合，组件化开发，让接口和实现分离
+DI：依赖注入，按照接口之间的定义注入对象
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+开发一个spring程序：
+1.添加依赖包
+2.创建一个applicationContext.xml配置文件，引入以下命名空间
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+3.创建一个类HelloSpring.java，在applicationContext.xml中声明
+<bean id="hello" class="xxxx包.HelloSpring">
+	<property name="say" value="Hello,Spring!"></property>
+</bean>
+4.调用bean
+	ApplicationContext context = new ClassPathXmlApplicationContext("app.xml");
+	HelloSpring helloSpring = (HelloSpring) context.getBean("hello");
+	System.out.println(helloSpring.getSay());
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+oop:面向对象编程，
+封装(属性私有化，提供公共的访问方法)，
+继承(提取公共属性和方法，通过extends继承过来，符合is a表达式)，
+多态(同一个接口拥有不同的实现类，执行不同实现类得到不同结果)
+
+aop:面向切面编程或面向方面编程，
+目的：留取更多的时间做好业务，专心做事
+核心思想：将需要开发的业务逻辑和公共服务进行分离,将公共服务集中处理
+运行原理：将复杂的公共服务分离出来，集中处理（编写类来处理）
+通过动态代理机制将提取出来的公共服务加载到执行的方法上，进行处理,且不改变原有代码的基础上进行组装
+使用？
+1.添加日志jar
+
+2.编写业务代码
+OrderServiceImpl:addOrder(Orderinfo info);
+且在实现类上添加注解@Service
+
+3.编写增强类
+日志增强类：LoggerAdvice
+
+4.配置app2.xml
+	<!-- 扫描组件, 动态代理增强类 -->
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	
+	<!-- 扫描数据访问层，业务逻辑层，控制器层或其他组件,实例化且存储到缓存中 -->
+	<context:component-scan base-package="dao,service,controller,aop"></context:component-scan>
+5.测试调用
+
+
+@Controller:控制器层
+@Service:业务层
+@Repository:数据访问层
+
+@Component:组件(任何层的一个类)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

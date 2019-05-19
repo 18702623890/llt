@@ -1,0 +1,76 @@
+﻿MyBatis 的一个强大的特性之一通常是它的动态 SQL 能力
+if判断
+			<if test="minPrice!=null ">
+				and g.price &gt; #{minPrice} 
+			</if>
+			<if test="maxPrice!=null ">
+				and g.price &lt; #{maxPrice}
+			</if>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sql:将重复的sql段提取出来作为公共节点，在使用include进行引用
+<sql id="goodsColumn">
+		id,`name`, `nums` as num, `price`, `store`, `discount` 
+</sql>
+select <include refid="goodsColumn"></include> from goods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+where:会自动去除拼接的sql中和where相连的and或者or,如果没有满足的条件，那么where本身也会去除
+		<where>
+			<if test="minPrice!=null ">
+				and g.price &gt; #{minPrice} 
+			</if>
+			<if test="maxPrice!=null ">
+				and g.price &lt; #{maxPrice}
+			</if>
+		</where>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+choose,when,otherwise:等价于java中的if(){}else if(){}else{},也可以和where节点联合使用
+		<where>
+			<choose>
+				<when test="searchBy == 'store'">and g.store=#{searchText}</when>
+				<when test="searchBy == 'name'">and g.name like #{searchText}</when>
+				<otherwise>and (g.name like #{searchText} or g.store=#{searchText})</otherwise>			
+			</choose>
+		</where>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+foreach:循环拼接sql,item(迭代别名),collection(迭代集合或数组),open(开始字符),close(结束字符),separator(分隔符),index(循环下标)
+	<select id="findGoodsByIds" parameterType="map" resultMap="goodsResultMap">
+		select * from goods 
+		<where> 
+			<if test="myname!=null">and name=#{myname} </if>
+			<if test="ids!=null">
+				and id in  
+				<foreach collection="ids" item="id" open="(" close=")" separator=",">
+					#{id}
+				</foreach>
+			</if>		
+		</where>
+	</select>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+trim:prefix(前缀where或set),prefixOverrides(去除前缀多余and或or),suffix(后缀),suffixOverrides(去除后面多余的",")
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+oracle和mysql过程对比
+-- 调用oracle数据库存储过程
+DECLARE
+ v_count INT :=0;
+BEGIN
+ goods.`getCount`(0,v_count);
+ dbms_output.putLine('数量'||v_count);
+END;
+-- 调用mysql数据库存储过程
+SET @v_count=0;
+CALL goods.`getCount`(1,@v_count); 
+SELECT @v_count;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+作业：使用mysql编写存储过程:
+统计折扣大于5折的商品数量，
+统计库存不足100的商品数量,
+
+编写mybatis代码调用存储过程，并且编写单元测试
+
+
+
+
+
+

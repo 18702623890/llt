@@ -18,8 +18,15 @@ public class DemoConfig extends JFinalConfig {
         constants.setViewType(ViewType.JSP);
         constants.setDevMode(true);
         ModelRecordElResolver.setResolveBeanAsModel(true);
+<<<<<<< HEAD
         constants.setBaseUploadPath("upload/");
         constants.setBaseDownloadPath("/download");
+=======
+        constants.setBaseUploadPath("upload/pdfFile/");
+        constants.setBaseDownloadPath("/download");
+        constants.setInjectDependency(true);
+
+>>>>>>> 第一次更新
     }
 
     @Override
@@ -47,17 +54,35 @@ public class DemoConfig extends JFinalConfig {
         plugins.add(activeRecord);
         activeRecord.addMapping("users","id",Users.class);//数据库表名映射到users到对象
         activeRecord.addMapping("file","id",UpFile.class);
+<<<<<<< HEAD
+=======
+        activeRecord.addMapping("json_task","id",Task.class);
+>>>>>>> 第一次更新
     }
 
     @Override
     public void configInterceptor(Interceptors interceptors) {
         //配置的是全局拦截器
   //      interceptors.add(new LoginInterceptor());
+<<<<<<< HEAD
+=======
+     //   interceptors.add(new I18nInterceptor());
+>>>>>>> 第一次更新
     }
 
     @Override
     public void configHandler(Handlers handlers) {
+<<<<<<< HEAD
 
+=======
+            /* handlers.add(new Handler() {
+                 @Override
+                 public void handle(String target, HttpServletRequest request, HttpServletResponse response, boolean[] isHandled) {
+                     request.setAttribute("ctx",request.getContextPath());
+                     next.handle(target,request,response,isHandled);
+                 }
+             });*/
+>>>>>>> 第一次更新
     }
 
 

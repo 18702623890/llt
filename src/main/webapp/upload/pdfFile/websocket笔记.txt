@@ -1,0 +1,89 @@
+websocket(tcp协议)工作流程:
+1. 为了建立一个websocket连接，客户端浏览器会向服务器发起一个http请求,
+这个请求和通常当 http请求有一个人不同的地方，
+包含了一些附加头信息"Upgrade:websocket"表明申请协议升级的http请求
+
+2.服务器解析这些附加头信息,产生应答返回给客户端,客户端和服务端的websocket连接建立
+双方就可以通过这个连接通道自由传递信息,这个连接会持续到客户端或服务器某一方主动关闭连接
+
+3.客户端和服务端通过tcp连接传输数据
+		<!-- websocket -->
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>1.1</version>
+		</dependency>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+客户端：jsp页面
+<link rel="stylesheet" href="component/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="component/lobibox/demo/demo.css" />
+<link rel="stylesheet" type="text/css"
+	href="component/lobibox/css/default.css">
+<link rel="stylesheet" href="component/lobibox/css/Lobibox.min.css" />
+<!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="component/jq/1.11.1/jquery.min.js"></script>
+<script src="component/dist/js/bootstrap.min.js"></script>
+<script src="component/lobibox/js/lobibox.min.js"></script>	
+$(function() {
+		var host = window.location.host;
+		//创建一个webscoket对象
+		var url = "ws://" + host + "/testwebSocket/mywebsocket";
+		var websocket = new WebSocket(url);
+		//建立webscoket连接
+		websocket.onopen = function(obj) {
+			console.log("和服务器连接连接成功");
+		}
+		//关闭连接
+		window.onbeforeunload = function() {
+			websocket.close();
+		}
+		//接收消息
+		websocket.onmessage = function(data) {
+			var array = data.data.split("#");
+			console.log("服务器推送的信息：" + data.data);
+			Lobibox.notify("success", {
+				title : array[0],
+				msg : array[1]
+			});
+		}
+		//发送消息
+		$("#sendMsg").click(function() {
+			websocket.send($("#title").val() + "#" + $("#content").val());
+		});
+	});
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+服务端：servlet
+
+@ServerEndpoint("/mywebsocket")
+public class WebSocketServlet {
+	//存储所有客户端连接过来的连接对象
+	public static CopyOnWriteArraySet<WebSocketServlet> list = new CopyOnWriteArraySet<WebSocketServlet>();
+	private Session session;
+	//开
+	@OnOpen
+	public void onOpen(Session session){
+		System.out.println("建立连接");
+		this.session = session;
+		list.add(this);	
+	}	
+	//关
+	@OnClose
+	public void onClose(){
+		System.out.println("关闭连接");
+		list.remove(this);		
+	}	
+	//发送	
+	@OnMessage
+	public void onMessage(String message) throws IOException{
+		System.out.println("接到的信息"+message);
+		
+		//转发信息给所有连接上来的客户端
+		for (WebSocketServlet webSocketServlet : list) {
+			webSocketServlet.session.getBasicRemote().sendText(message);
+		}
+	}	
+	//异常
+}
+

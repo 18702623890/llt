@@ -12,7 +12,10 @@ import com.jfinal.aop.Clear;
 import com.jfinal.core.Controller;
 import interperter.LoginInterceptor;
 import java.util.List;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 第一次更新
 @Before(LoginInterceptor.class)
 public class UserController extends Controller {
     USerService serService=new USerService();
@@ -33,6 +36,10 @@ public class UserController extends Controller {
     @Clear
     @Before(UserValidator.class)
     public void adduser(){
+<<<<<<< HEAD
+=======
+        createToken("jfinal_token",30*60);
+>>>>>>> 第一次更新
         Users users=this.getModel(Users.class,"users");
         if(serService.saveUsers(users)){
             renderText("注册成功");

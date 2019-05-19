@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
+<<<<<<< HEAD
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/UserController.java" line="25" />
+=======
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/UserController.java" line="24" />
+>>>>>>> 第一次更新
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp" line="39" />
   </component>
   <component name="ChangeListManager">
@@ -37,6 +41,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,6 +59,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
               <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/DocumentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+>>>>>>> 第一次更新
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,27 +74,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/myWebApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+>>>>>>> 第一次更新
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Users.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
               <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/myWebApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#122#123#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
+>>>>>>> 第一次更新
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Preference.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
@@ -105,24 +135,44 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
               <caret line="3" column="33" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="33" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/top.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+>>>>>>> 第一次更新
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="837">
               <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/index/upload.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+>>>>>>> 第一次更新
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/UserValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
               <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/test/TestFileRename.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+>>>>>>> 第一次更新
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,10 +181,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2484">
               <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/config/DemoConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 第一次更新
             </state>
           </provider>
         </entry>
@@ -144,12 +204,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="Jsp File" />
         <option value="JavaScript File" />
+=======
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
+>>>>>>> 第一次更新
         <option value="Class" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -170,6 +236,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/entity/File.java" />
         <option value="$PROJECT_DIR$/src/main/resources/file.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/util/UploadFile.java" />
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>see</find>
+      <find>reset</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/llt" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+>>>>>>> 第一次更新
         <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/util/UploadFileprocess.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/FileDirtory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/entity/UpFile.java" />
@@ -178,7 +258,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/astu/toudijianli/toudijianliManaMy.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/astu/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+=======
+>>>>>>> 第一次更新
         <option value="$PROJECT_DIR$/src/main/webapp/astu/wenjian.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/astu/page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/astu/index/wenjianInfo.jsp" />
@@ -188,6 +271,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/menu.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/astu/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/interperter/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/astu/top.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/editUser.jsp" />
@@ -210,6 +294,50 @@
     <option name="y" value="97" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
+=======
+        <option value="$PROJECT_DIR$/src/main/webapp/astu/top.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/editUser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/util/Capthcha.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/BaseValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/UserValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/testupload.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/astu/wendang/toudijianliManaMy.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n_en_US.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/interperter/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/common/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/my/Mykit.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/test/I18n.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/model/UpFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/TokenValidator.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/regist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/util/FileDirtory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/myWebApp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mission.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Mission.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/file.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/DocumentService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Preference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/MissionService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/web_master.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/TaskService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TestFileRename.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/config/DemoConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/DocumentController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+>>>>>>> 第一次更新
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,7 +345,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
+=======
+>>>>>>> 第一次更新
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,6 +389,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -267,6 +399,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 第一次更新
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,6 +419,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -306,6 +441,9 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="interperter" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 第一次更新
             </path>
             <path>
               <item name="JFinalWeb-master" type="b2602c69:ProjectViewProjectNode" />
@@ -313,17 +451,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 第一次更新
             </path>
             <path>
               <item name="JFinalWeb-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="JFinalWeb-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="validator" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 第一次更新
             </path>
             <path>
               <item name="JFinalWeb-master" type="b2602c69:ProjectViewProjectNode" />
@@ -351,31 +497,58 @@
             </path>
             <path>
               <item name="JFinalWeb-master" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="JFinalWeb-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="JFinalWeb-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+>>>>>>> 第一次更新
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+>>>>>>> 第一次更新
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557132674914" />
     <property name="js.last.introduce.type" value="VAR" />
     <property name="last_opened_file_path" value="E:/workspace4/jiuye" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558000189519" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DB2" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="E:/workspace4/jiuye" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+>>>>>>> 第一次更新
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
+      <recent name="D:\MyDownload\JFinalWeb-master\src\main\webapp\astu" />
+>>>>>>> 第一次更新
       <recent name="D:\MyDownload\JFinalWeb-master\src\main\webapp\astu\index" />
       <recent name="D:\MyDownload\JFinalWeb-master\src\main\webapp" />
     </key>
@@ -411,6 +584,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="Mykit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gwz.demo.service.impl.my.Mykit" />
+      <module name="myWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gwz.demo.service.impl.my.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> 第一次更新
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gwz.demo.controller.user.Test" />
       <module name="myWeb" />
@@ -424,6 +613,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="TestFileRename" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestFileRename" />
+      <module name="myWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> 第一次更新
     <configuration name="myWebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gwz.demo.myWebApp" />
       <module name="myWeb" />
@@ -440,6 +645,11 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.myWebApp" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="Application.TestFileRename" />
+        <item itemvalue="Application.Mykit" />
+>>>>>>> 第一次更新
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.DocumentController" />
       </list>
@@ -494,12 +704,39 @@
       <workItem from="1556934289324" duration="6123000" />
       <workItem from="1556969794903" duration="27000" />
       <workItem from="1557044068054" duration="8450000" />
+<<<<<<< HEAD
       <workItem from="1557130477512" duration="1289000" />
+=======
+      <workItem from="1557130477512" duration="7009000" />
+      <workItem from="1557151485556" duration="1799000" />
+      <workItem from="1557195650173" duration="7232000" />
+      <workItem from="1557215412894" duration="3554000" />
+      <workItem from="1557219475057" duration="4254000" />
+      <workItem from="1557281872037" duration="5169000" />
+      <workItem from="1557319620332" duration="44000" />
+      <workItem from="1557385391932" duration="4599000" />
+      <workItem from="1557473498516" duration="5094000" />
+      <workItem from="1557479124427" duration="10293000" />
+      <workItem from="1557631393189" duration="1704000" />
+      <workItem from="1557805306414" duration="10966000" />
+      <workItem from="1557826645438" duration="1444000" />
+      <workItem from="1557831470257" duration="5165000" />
+      <workItem from="1557842152273" duration="5014000" />
+      <workItem from="1557886734154" duration="3305000" />
+      <workItem from="1557990420167" duration="3180000" />
+      <workItem from="1557994649155" duration="5536000" />
+      <workItem from="1558066158093" duration="260000" />
+      <workItem from="1558094668103" duration="1190000" />
+>>>>>>> 第一次更新
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="227158000" />
+=======
+    <option name="totallyTimeSpent" value="312680000" />
+>>>>>>> 第一次更新
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -512,9 +749,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+<<<<<<< HEAD
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902153" visible="true" weight="0.20095949" />
+=======
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902153" visible="true" weight="0.22921109" />
+>>>>>>> 第一次更新
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -522,6 +764,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50097847" side_tool="true" weight="0.20362474" />
       <window_info id="Web" order="7" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.45435685" />
@@ -536,6 +779,27 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32987553" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32987553" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+=======
+      <window_info id="DB Browser" order="8" />
+      <window_info id="Project Explorer" order="9" />
+      <window_info id="Job Explorer" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.34371755" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52232605" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18587747" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.14211619" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.34371755" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.22326064" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32987553" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32987553" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="DB Execution Console" order="14" />
+      <window_info anchor="bottom" id="Console" order="15" />
+>>>>>>> 第一次更新
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -547,7 +811,11 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49902153" visible="true" weight="0.15085287" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902153" visible="true" weight="0.2249467" />
+>>>>>>> 第一次更新
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -555,6 +823,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50097847" side_tool="true" weight="0.20362474" />
       <window_info id="Web" order="7" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.2821577" />
@@ -569,6 +838,27 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32987553" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32987553" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+=======
+      <window_info id="DB Browser" order="8" />
+      <window_info id="Project Explorer" order="9" />
+      <window_info id="Job Explorer" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.34371755" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52232605" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18587747" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.14211619" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" weight="0.35373443" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.22326064" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32987553" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32987553" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="DB Execution Console" order="14" />
+      <window_info anchor="bottom" id="Console" order="15" />
+>>>>>>> 第一次更新
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -589,6 +879,7 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.4/jfinal-3.4.jar!/com/jfinal/core/Controller.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -659,12 +950,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="22" column="39" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="39" />
+=======
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/web/javax.servlet.jsp/2.3.2/javax.servlet.jsp-2.3.2.jar!/org/apache/jasper/compiler/DefaultErrorHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="107" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/util/IdGenertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/util/Capthcha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interperter/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+>>>>>>> 第一次更新
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.4/jfinal-3.4-sources.jar!/com/jfinal/core/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -672,10 +1036,19 @@
           <folding>
             <element signature="e#22985#22986#0" expanded="true" />
             <element signature="e#23021#23022#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/LoginValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 第一次更新
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -689,10 +1062,35 @@
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/validate/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="158" column="19" selection-start-line="158" selection-start-column="19" selection-end-line="158" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/BaseValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/TokenValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+>>>>>>> 第一次更新
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -734,25 +1132,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/validator/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.4/jfinal-3.4-sources.jar!/com/jfinal/plugin/activerecord/Model.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="701" column="13" selection-start-line="701" selection-start-column="13" selection-end-line="701" selection-end-column="13" />
+        <state relative-caret-position="810">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mission.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/common/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
           <folding>
-            <element signature="e#19688#19689#0" expanded="true" />
-            <element signature="e#19749#19750#0" expanded="true" />
-            <element signature="e#19977#19978#0" expanded="true" />
-            <element signature="e#20025#20026#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/UpFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/file.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+>>>>>>> 第一次更新
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.4/jfinal-3.4-sources.jar!/com/jfinal/plugin/activerecord/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+=======
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/plugin/activerecord/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17361">
+>>>>>>> 第一次更新
+          <caret line="701" column="13" selection-start-line="701" selection-start-column="13" selection-end-line="701" selection-end-column="13" />
+          <folding>
+            <element signature="e#19688#19689#0" expanded="true" />
+            <element signature="e#19749#19750#0" expanded="true" />
+<<<<<<< HEAD
+            <element signature="e#19977#19978#0" expanded="true" />
+            <element signature="e#20025#20026#0" expanded="true" />
+=======
+>>>>>>> 第一次更新
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -904,12 +1365,166 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Mission.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/MissionService.java" />
+    <entry file="file://$PROJECT_DIR$/llt/src/main/java/com/gwz/demo/controller/user/DocumentController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/io/FileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/core/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="855" column="54" lean-forward="true" selection-start-line="855" selection-start-column="54" selection-end-line="855" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="116" column="57" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="57" />
+          <caret line="117" column="57" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="57" />
+          <caret line="118" column="57" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/upload/UploadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/model/Preference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/USerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/DocumentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/web_master.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/util/FileDirtory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/service/impl/user/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/aop/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/core/ActionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/jfinal/jfinal/3.5/jfinal-3.5-sources.jar!/com/jfinal/core/JFinalFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="1384" column="19" selection-start-line="1384" selection-start-column="19" selection-end-line="1384" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/controller/user/DocumentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+>>>>>>> 第一次更新
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2484">
@@ -935,12 +1550,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/myWebApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/astu/index/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestFileRename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+>>>>>>> 第一次更新
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/myWebApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -952,6 +1606,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gwz/demo/config/DemoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+>>>>>>> 第一次更新
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -959,4 +1619,84 @@
       </provider>
     </entry>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>myWeb:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>myWeb</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ant:ant:1.6.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+>>>>>>> 第一次更新
 </project>
