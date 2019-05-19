@@ -1,0 +1,50 @@
+Collection的子接口Set，方法和Collection相同
+无序且存储不重复数据
+
+Set的实现类HashSet:散列存放
+
+HashSet:无序保存一组不重复的数据，依靠hashCode()和equals()进行判断是否重复,增删效率高
+1.通过对象的hashCode()找到添加数据的位置
+2.在该位置上如果有对象存在则使用equals()对比是否相等，相等则不添加，不相等则添加
+3.在该位置上如果没有对象存在则直接添加
+应用：保存自定义类时，需要去重复，则自定义类需要重写hashCode()和equals()方法
+
+TreeSet:同时具备去除重复的能力(他是依靠比较器来识别重复数据),存储一组可以比较的数据,否则会出现ClassCastException异常
+
+了解这两种接口的用法:
+Comparator接口
+Comparable接口
+
+如果要存储自定义类，则必须对自定义类实现Comparable接口，重写compareTo(obj)方法
+执行以下规则：
+返回正数：this>obj
+返回正数：this<obj
+返回0：this==obj
+
+当比较字母字符串内容排序，可以使用字符串的compareTo()
+如果有多个比较规则，则在前个比较的结果基础上再次进行比较排序
+
+当比较规则有多种时，Comparable无法满足，这时使用Comparator接口，自定义各种规则的比较器，在创建集合时，通过构造函数的参数传入
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Map<k,v>:k是Set集合,v是Collection集合
+
+put(key,value):添加，修改
+get(key):查询
+remove(key):删除
+containsKey(key):查询键是否存在
+clear():清空集合
+
+练习：编写一个电影售票系统，原始票共24张；座位如下
+	1	2	3	4	5	6	7	8
+1排 O	O	O	O	O	O	O	O
+2排 O	O	O	O	O	O	O	O
+3排 O	O	O	O	O	O	O	O
+票的位置是随机产生的，但不能重复,每售出一张票，则在上图标记为X，例如
+	1	2	3	4	5	6	7	8
+1排 O	O	O	O	O	O	X	O
+2排 O	O	O	O	X	O	O	O
+3排 O	X	O	O	O	O	X	O
+要求：1.使用面向对象，2.使用集合
+

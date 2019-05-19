@@ -1,0 +1,104 @@
+﻿一、jQuery简介
+二、作用和优势
+三、语法特征
+四、事件
+五、实现特效
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+一、jQuery简介
+由美国人john resig(约翰.瑞森),一种流行的快速且简介的javascript程序库（框架）,
+jQuery对于javascript对象和函数的封装，提供了一种简便的javascript设计模式，优化 HTML文档操作(DOM)、事件处理、动画设计和ajax交互.
+设计思想：write less,do more(代码写的更少，事情做得更多)
+jQuery核心特征可总结：
+具有独特的链式语法和短小清晰的多功能接口
+具有高效灵活的css选择器，并且可对css选择器进行扩展
+拥有便捷的插件扩展机制和丰富的插件
+兼容各种主流浏览器(firefox,google,safari,opera,ie7,8+以上)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+二、作用和优势
+作用:
+访问和操作DOM元素
+控制页面样式
+对页面事件进行处理
+扩展新的jQuery插件
+与Ajax技术完美结合
+优势：
+体积小，压缩后只有100KB左右
+强大的选择器
+出色的DOM封装
+可靠的事件处理机制
+出色的浏览器兼容性
+使用隐式迭代简化编程
+丰富的插件支持
+ 
+
+三、语法特征
+1.jQuery程序库
+开发库：
+jquery-1.版本号.js-->jQuery-1.11.1.js
+大小268KB左右，无压缩版，用于学习和开发
+
+发布库：
+jquery-1.版本号.min.js-->jQuery-1.11.1.min.js
+大小91KB左右,进过工具压缩，用与产品发布
+///////////////////////////
+2.使用jQuery程序库
+在title标签之间编写如下代码
+<script src="js/jQuery-1.11.1.js" type="text/javascript"></script>
+
+3.再编写自己的jQuery代码.声明加载事件
+<script>
+	$(document).ready(function(){//加载事件，等价于window.onload
+		//你的jQuery代码
+		xxx();
+	});
+	function xxx(){
+	}
+</script>
+
+window.onload:必须等待页面所有内容都加载完成才执行,一个页面只能编写一个
+$(document).ready():网页中所有dom文档结构绘制完毕(与dom元素关联的内容：图片，视频，flash等资源并没有加载完成)即刻执行,可以在一个页面编写多个。
+
+4.常用的基本选择器
+$("#id名"):根据id名获得对象
+$("标签名"):根据标签名获得一组对象
+$(".className"):根据类样式名获得一组对象
+
+5.dom对象和jQuery对象的转换
+	//jQuery对象转dom对象
+	table = $table.get(0);
+	table = $table[0];
+	//dom对象转jQuery对象,使用$()工厂函数
+	$("<div id='my'>卡号数据的</div>");//jQuery对象					
+	$(this)
+	
+6. 常用语法
+css("样式属性","属性值")
+css({"样式属性1":"属性值1","样式属性2":"属性值2"})
+var tmp = $obj.css("样式属性名");
+addClass():	为元素添加类样式
+removeClass():	为元素移除类样式
+next():当前对象的下一个
+val():获取或修改表单元素值
+attr("属性名","属性值"):修改属性值
+var tmp = $obj.attr("属性名"):获取属性值
+each():循环迭代jQuery对象
+$a.insertAfter($b):将a对象插入到b对象的后面,
+$a.appendTo($b):将b追加到a元素中
+
+
+四、事件
+click():单击
+
+keydown():键盘按下事件
+keyup(): 键盘弹起事件
+keypress():键盘按下+弹起事件
+mousedown():鼠标点下事件
+
+$(document).keydown(function(even) {
+	var code = even.keyCode();//返回按下的键盘码,a(左):65,d(右):68,w(上):87,s(下):83
+});
+
+$("#id").click(function(){
+	//编写单击要触发的代码	
+});
+

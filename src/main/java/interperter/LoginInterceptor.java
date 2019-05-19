@@ -13,10 +13,16 @@ public class LoginInterceptor implements Interceptor {
         if(users==null){
             controller.renderText("请先登录");
             controller.redirect("/login.jsp");
+<<<<<<< HEAD
 
             return ;
         }
         invocation.invoke();
 
+=======
+            return ;
+        }
+        invocation.invoke();
+>>>>>>> 第一次更新
     }
 }

@@ -1,0 +1,132 @@
+﻿DB:数据库，用于存储数据的仓库
+DBMS:数据库管理系统，对DB存储的数据实现更有效快捷的管理的系统
+针对数据库的操作：4个方面，增删改查--->对应有4套可快捷操作数据库的语言sql
+
+ORACLE：安全性高，体积大，专业，功能强大，服务费贵，学习免费，商用收费,面向于高端用户3%
+sqlserver2008-->体积大，安装不方便，功能也很强大，面向于中低端用户
+mysql:体积小，学习和商用都免费，安装简单,面向于中小企业
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+数据库中编写的sql不区分大小写
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+结构化语言
+DDL(数据库定义语言)：定义或创建数据库对象，create,drop,alter
+DML(数据库管理语言)：针对表对象中的数据实现增删改，insert,update,delete
+DCL(数据库控制语言)：针对数据库用户的权限操作和事务操作，grant,invoke,commit,rollback
+DQL(数据库查询语言)：针对表对象中的数据实现查询，select
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*******创建对象**********************************
+create 对象类型 对象名称;
+1.建库
+create database myschool charset 'utf8';
+2.建表
+ CREATE   TABLE [ IF NOT EXISTS ]    `表名`   (
+    
+	`字段名1`   列类型 [ 属性 ]  [ 索引 ] [注释] ,
+	`字段名2`   列类型 [ 属性 ]  [ 索引 ] [注释] , 
+	… …    
+    `字段名n`   列类型 [ 属性 ]  [ 索引 ] [注释] 
+
+)  [ 表类型 ] [ 表字符集 ] [注释] ;
+
+例如：
+CREATE	TABLE `subject`(
+subjectNo INT(4) PRIMARY KEY  AUTO_INCREMENT,
+subjectName VARCHAR(50),
+classHour INT(4),
+gradeId INT(4)
+);
+
+********修改表对象（表中的名称，列，索引......）********
+alter table 表名 add 索引类型 [索引名称] (列名);
+alter table 表名 rename as 新表名;
+alter table 表名 add `字段名2`  列类型 [ 属性 ]  [ 索引 ] [注释];
+
+(MODIFY:修改属性时使用，change:修改列名时使用)
+alter table 表名 MODIFY `字段名`  列类型 [ 属性 ]  [ 索引 ] [注释];
+alter table 表名 change `旧字段` `新字段名`  列类型 [ 属性 ]  [ 索引 ] [注释];
+
+alter table 表名 drop COLUMN `字段名`;
+*******删除对象**********************************
+drop 对象类型 对象名;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+java语言中的数据类型：
+基本类型：数值（整型int,short,long,byte，浮点float,double），字符，布尔，枚举
+引用类型：Date
+--------------------vs--------------------
+表中列的类型：数值,字符,时间和日期,NULL值
+数值：int,float,double,decimal(m,n):m代表总长，n小数点后长度
+字符：
+char固定长度，当分配长度超出时，多余长度是不会释放,应用在已知不变长度的情况（性别，状态）
+varchar可变长度，当分配的长度超出时，多余长度会自动释放
+text文本类型，当分配的内容长度未知，可能需要设置非常长，这时选择使用text
+
+时间和日期：
+日期:Date
+时间:Time
+日期时间:DateTime ,yyyy-MM-dd hh:mm:ss
+时间戳：Timestamp,精确到毫秒
+
+NULL值：没有值，空值，在做查询时，只能使用is来匹配
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+属性：
+UNSIGNED：非负数
+ZEROFILL:0填充，不足补0
+AUTO_INCREMENT:设置数据自动增长,用在于主键列
+NOT NULL:不为空
+default:默认值 
+
+CREATE	TABLE `test`(
+length1 INT(4) UNSIGNED,
+length2 INT(4) ZEROFILL,
+length3 INT(4) AUTO_INCREMENT,
+length4 int(4) not null
+);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+注释：comment,为列和表标识出说明文字
+CREATE	TABLE `test`(
+length1 INT(4) UNSIGNED comment '长度',
+name varchar(100) comment '名字'
+)comment '测试表';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+表的引擎或表类型
+ENGINE=INNODB(推荐使用，支持事务，占用空间是MYISAM的2倍),MyISAM(不支持事务，占用空间小)
+CREATE	TABLE `test`(
+length1 INT(4) UNSIGNED comment '长度',
+name varchar(100) comment '名字'
+)comment '测试表' ENGINE=INNODB;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+表的字符集
+charset='utf8':为了能够添加中文字符不乱码，设置字符集为utf8
+
+CREATE	TABLE `test`(
+length1 INT(4) UNSIGNED comment '长度',
+name varchar(100) comment '名字'
+)ENGINE=INNODB charset='utf8' comment '测试表';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+索引:增加索引可以对查询提高效率,但是也不能够过多使用索引,过多反而会降低数据库的效率
+主键：一般在建表时添加,特殊的唯一索引，不允许为NULL值
+唯一索引(unique)：数据不重复，但是可以为NULL值
+普通索引(index)
+全文索引(fulltext)
+组合索引(index):将使用的多列合并一起做一个索引，遵循最左原则
+
+使用追加方式语法：
+Alter table 表名 add 索引类型(列名);
+Alter table 表名 add index 索引名(列名1,列名2,列名3);
+
+CREATE	TABLE `test`(
+id int primary key auto_increment,
+length1 INT(4) UNSIGNED comment '长度',
+name varchar(100) comment '名字',
+idcard varchar(18) 
+)ENGINE=INNODB charset='utf8' comment '测试表';
+
+Alter table `test` add unique(idcard);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+备份数据库：
+1.将源数据库复制到其他服务器
+2.导出备份的sql文件(建库，选中库，删除表，创建表，添加索引，添加数据)
+

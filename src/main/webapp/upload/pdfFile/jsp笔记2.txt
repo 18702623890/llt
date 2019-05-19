@@ -1,0 +1,104 @@
+程序的2种架构:b/s,c/s
+web项目的发布过程：如何集成tomcat,通过url访问，url的组成，修改tomcat端口号,tomcat发布服务器的目录结构概念
+jsp执行原理：首次访问时必定会执行3步操作，翻译（java类-->servlet），编译(编译成.class文件)，执行；其他时候将不执行这3步骤
+jsp页面组成：333791
+3指令：
+<%@ page language="java" pageEncoding="UTF-8" contentType="text/html;charset=UTF-8"%>
+<%@include file="" %>
+<%@taglib uri="标签的url地址" prefix="c" %>
+
+3注释：
+客户端注释：<!-- -->，客户端可见
+服务器注释：<%-- --%>，客户端不可见
+java代码注释:单行//，多行/* */
+
+3脚本：
+jsp小脚本：<% %>
+jsp表达式：<%=表达式 %>
+jsp声明:<%! %>
+
+7动作：jsp标签
+jsp:forward-->页面自动跳转
+
+
+9jsp内置对象：
+request:请求数据
+response：响应请求
+session:会话对象
+application:全局对象
+
+out:输出内容
+exception:异常对象
+page:页面对象
+pageContext:页面上下文对象
+config:配置对象
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+maven新建项目
+  <groupId>com.longchang.www</groupId>公司域名倒转
+  <artifactId>nj1701_web2</artifactId>  项目名称
+  <version>1.0.0</version>  版本号
+
+新建的maven项目结构：
+src/main/java:java后台源代码文件
+src/main/resources:对应给src/main/java下源代码使用的一些配置文件,如：jdbc.properties,spring.xml,struts.xml,.....
+src/test/java:开发人员编写的测试源代码
+src/test/resources:对应给src/test/java下源代码使用的一些配置文件,文件内容和src/main/resources名称一致，配置不同
+src/main/webapp:页面资源文件，如：html,jsp,css,js,img,web-inf,meta-inf
+target:打包后的目标文件
+pom.xml：maven
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~发布包到nexus私服~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.新建一个maven项目
+2.在项目中编写一些测试代码
+3.在pom文件中填写上上传的代码
+	<distributionManagement>
+		<repository>
+			<id>releases</id><!--settings.xml中的id一致 -->
+			<name>Nexus Release Repository</name>
+			<url>http://192.168.10.217:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://192.168.10.217:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+4.右键项目，run as->run configuration-->goals:deploy
+test:测试并编译
+deploy：发布到私服
+package：打包
+install：安装到本地仓库
+clean：清除本地仓库
+compile：编译
+5.执行run
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~构建多模块项目~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.新建一个maven project，删除里面的所有结构，只保留pom.xml
+2.为该主项目创建子模块
+3.选中主项目右键--》new--》other--》maven module--》create a simple project 或maven-archetype-webapp
+	<modules>
+		<module>nj1701_web2</module>
+		<module>nj1701_service</module>
+		<module>nj1701_dao</module>
+	</modules>
+4.web项目依赖service项目，service项目依赖dao项目
+		service项目中编写
+		<dependency>
+			<groupId>com.longchang</groupId>
+			<artifactId>nj1701_dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+三层结构：数据访问层dao，业务逻辑层service，表示层controller
+
+mvc模式:model,view,controller
+纯jsp开发-->javabean+jsp-->jsp+servlet+javabean
+model 2 :jsp+servlet+javabean
+struts2 或springmvc ==>mvc设计模式
+
+
+
+
+

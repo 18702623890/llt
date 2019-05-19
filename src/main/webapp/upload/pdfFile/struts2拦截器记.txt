@@ -1,0 +1,37 @@
+struts2的拦截器和过滤器的差别？
+1.拦截器是struts2的扩展功能的组件，只对strut2的内部请求拦截，默认请求后缀*.action
+2.过滤器是对用户提交的所有请求进行过滤，也可以通过配置方式选择性的对某些请求进行过滤
+进行过滤和拦截的原理是相似,在请求时及响应时都会被拦截或过滤
+
+struts1的核心控制器是servlet,在功能的扩展上比较差，因为功能都是写死在核心控制上的。
+struts2的核心控制器是filter,在功能的扩展上靠得是拦截器，可以自由组合添加或者去除
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+拦截器：
+struts.xml中package继承 struts-default将会默认引用strust-default.xml中的defaultStack拦截器栈 
+
+自定义拦截器方式：
+a.实现接口Interceptor
+b.继承抽象类AbstractInterceptor(推荐)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+开发自定义拦截器的步骤：
+1.创建类继承AbstractInterceptor,重写interceptor方法,编写执行代码
+
+2.在struts.xml中进行声明
+		<!-- 声明自定义拦截器类 -->
+		<interceptors>
+			<interceptor name="myInterceptor1" class="interceptor.MyInterceptor1"></interceptor>
+			
+			<interceptor-stack name="liangliangStack">
+				<interceptor-ref name="myInterceptor1"></interceptor-ref>
+				<!-- 调用系统提供的默认拦截器栈，在struts-default.xml中定义了 -->
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+3.在需要调用的action 节点中调用声明的拦截器类
+当在action节点中调用了自定义拦截器或拦截器栈，通过package继承过来的defaultStack将失效
+
+<interceptor-ref name="liangliangStack"></interceptor-ref>
+
+

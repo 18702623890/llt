@@ -1,0 +1,46 @@
+﻿一.HttpSessinBindingListener:一对一的session监听器，对session的数据添加和移除会有监听操作
+步骤：
+1.创建类来实现该接口HttpSessinBindingListener
+public class OnlineUserListener implements HttpSessionBindingListener {
+	private String username;	
+	public OnlineUserListener() {	}
+	public OnlineUserListener(String username) {
+		this.username = username;
+	}
+	/**
+	 * 将数据放入session时触发
+	 */
+	@Override
+	public void valueBound(HttpSessionBindingEvent event) {
+		HttpSession session = event.getSession();
+		ServletContext application = session.getServletContext();
+		List<String> onlineUserList = new ArrayList<>();
+		if (application.getAttribute("onlineUsers") != null) {
+			onlineUserList = (List<String>) application.getAttribute("onlineUsers");
+		}
+		onlineUserList.add(username);
+		application.setAttribute("onlineUsers", onlineUserList);
+		System.out.println(session.getId()+"-"+username+"上线"+new Date());
+	}
+	/**
+	 * 只会对session执行了invalidate()和session的生命周期结束进行监听
+	 */
+	@Override
+	public void valueUnbound(HttpSessionBindingEvent event) {
+		HttpSession session = event.getSession();
+		ServletContext application = session.getServletContext();
+		List<String> onlineUserList = new ArrayList<>();
+		if (application.getAttribute("onlineUsers") != null) {
+			onlineUserList = (List<String>) application.getAttribute("onlineUsers");
+			onlineUserList.remove(username);// 将用户从在线列表中删除
+		}
+		application.setAttribute("onlineUsers", onlineUserList);
+		System.out.println(username+"下线"+new Date());
+	}
+}
+2.触发监听工作,在web.xml中
+<!-- 监听器 -->
+	<listener>
+		<listener-class>com.longchang.www.listener.OnlineUserListener</listener-class>
+	</listener>
+
